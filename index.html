@@ -2,19 +2,22 @@
 <html lang="zh-CN"></html>
 <html><time datetime="datetime"></time></html>
 <html><!--冬の花音乐-->
-<audio src="Fuyu No Hana.mp3" autoplay="autoplay"></audio>
 </html>
 <html>
 <form>    
-<select name="musicselect" size="5" style="color:blue; text-align:center" autofocus="autofocus">
+<select name="musicselect" id="music" autofocus="autofocus" onchange="musicjs()">
     <datalist id="musciselect">
-        <option value="Fuyu No Hana.mp3">冬之花音乐</option>
-        <option value="TruE.mp3">TruE</option>
-        <option value="TruE-ed-ver.mp3">TruE-ed-ver</option>
+        <option value="1">冬之花音乐</option>
+        <option value="2">TruE</option>
+        <option value="3">TruE-ed-ver</option>
     </datalist>
-    </select>
-    <p >可选的：冬之花[Fuyu No Hana.mp3]、TruE[TruE.mp3]\[TruE-ed-ver.mp3](暂时的）</p>
+</select>
 </form>
+<script>
+function musicjs() {
+    var select = "music"
+    if (select == 1) return <audio src="Fuyu No Hana.mp3" autoplay="autoplay"></audio>;}
+</script>
 </html>
 <html><!--mainhtml-->
 <h1>你好啊</h1>
